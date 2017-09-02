@@ -1,3 +1,153 @@
 @import "_normalize.scss";
 @import "_variables.scss";
 
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/Roboto/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/Roboto/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Roboto/RobotoMedium/RobotoMedium.woff") format("woff"),
+  url("../fonts/Roboto/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gilroylight";
+  src: url('../fonts/Gilroy/light/gilroy-light.eot');
+  src: url('../fonts/Gilroy/light/gilroy-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/light/gilroy-light.woff') format('woff'),
+  url('../fonts/Gilroy/light/gilroy-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url('../fonts/Gilroy/extrabold/gilroy-extrabold.eot');
+  src: url('../fonts/Gilroy/extrabold/gilroy-extrabold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/extrabold/gilroy-extrabold.woff') format('woff'),
+  url('../fonts/Gilroy/extrabold/gilroy-extrabold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+body {
+  font-size: 18px;
+  color: #000000;
+}
+
+.ma-header {
+  padding: 1px 50px 280px;
+  background: #e2e2e2 url("../img/header-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__title {
+    font-family: $primaryFont;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 173px;
+    margin-bottom: 0;
+    line-height:69px;
+  }
+  &__description {
+    font-family: "gilroylight", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 36px;
+  }
+  &__btn {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(3, 161, 228, 0.2);
+    border-radius: 20px;
+    background-color: #03a1e4;
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar {
+  border: none;
+  background: none;
+}
+
+.dropdown-menu {
+  min-width: 70px;
+  padding: 0;
+  font-size: 18px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #444444;
+  font-family: $secondaryFont;
+  font-size: 18px;
+}
+
+.navbar-nav {
+  padding-top: 21px;
+  &__link {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid #444444;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  color: #444444;
+  background-color: transparent;
+}
+
+.dropdown-menu>li>a {
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid #444444;
+    background-color: transparent;
+  }
+}
