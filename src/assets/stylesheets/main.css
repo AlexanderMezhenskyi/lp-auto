@@ -403,7 +403,8 @@ body {
   padding: 1px 50px 280px;
   background: #e2e2e2 url("../img/header-bg.jpg") 50% no-repeat;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 2px solid #03a1e4; }
   .ma-header__title {
     font-family: "gilroyextrabold", sans-serif;
     font-size: 60px;
@@ -428,11 +429,6 @@ body {
     .ma-header__btn:hover {
       color: #ffffff;
       text-decoration: none; }
-  .ma-header__line {
-    height: 2px;
-    margin: 0;
-    background-color: #03a1e4;
-    border: none; }
 
 .navbar {
   border: none;
@@ -455,10 +451,13 @@ body {
 
 .navbar-nav {
   padding-top: 21px; }
+  .navbar-nav__item {
+    margin-left: 30px;
+    padding-top: 20px; }
   .navbar-nav__link {
-    border-bottom: 1px solid transparent; }
+    border-bottom: 2px solid transparent; }
     .navbar-nav__link:hover {
-      border-bottom: 1px solid #444444;
+      border-bottom: 2px solid #03a1e4 !important;
       transition: all 0.2s ease-in; }
 
 .navbar-default .navbar-nav > .open > a,
@@ -472,20 +471,99 @@ body {
   background-color: transparent; }
 
 .dropdown-menu > li > a {
-  border-bottom: 1px solid transparent; }
+  border-bottom: 2px solid transparent; }
   .dropdown-menu > li > a:hover {
-    border-bottom: 1px solid #444444;
+    border-bottom: 2px solid #03a1e4;
     background-color: transparent; }
+
+.ma-tabs {
+  padding: 100px 0;
+  background: #ececec url("../img/design.jpg") 50% no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #03a1e4; }
+  .ma-tabs__title {
+    font-family: "gilroyextrabold", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    text-align: center; }
+    .ma-tabs__title:before {
+      content: url("../img/two.png");
+      margin-right: 17px; }
+  .ma-tabs__description {
+    font-family: "RobotoRegular", sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center; }
+  .ma-tabs__choice {
+    font-family: "gilroyextrabold", sans-serif;
+    font-weight: 700;
+    text-align: center; }
+  .ma-tabs__preview {
+    height: 250px;
+    width: 165px;
+    transform: rotate(90deg);
+    overflow: hidden; }
+  .ma-tabs__link {
+    font-family: "gilroyextrabold", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none; }
+    .ma-tabs__link--last {
+      margin-left: 70px; }
+
+.tabs-left > li {
+  float: none; }
+
+.tabs-left > li.active > a,
+.tabs-left > li.active > a:hover,
+.tabs-left > li.active > a:focus {
+  color: #00a0e3;
+  background-color: transparent; }
+
+.tabs-left > li.active > a {
+  color: #00a0e3; }
+
+.tabs-left > li > a {
+  margin-right: 0;
+  display: block;
+  color: #000000; }
+
+.sideways {
+  position: relative; }
+
+.sideways > li {
+  text-align: left;
+  margin-bottom: 30px; }
+
+.sideways.tabs-left > li {
+  transform: rotate(-90deg); }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: none; }
+
+.nav > li > a {
+  padding: 0; }
+
+.nav-tabs {
+  border: none; }
+
+.nav-tabs > li > a {
+  border: none; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  border: transparent; }
 
 .ma-reviews {
   background: #fdfdfd url("../img/video-bg.jpg") 50% no-repeat;
   background-size: cover;
-  padding: 0 0 110px 0; }
-  .ma-reviews__line {
-    height: 4px;
-    margin: 0 0 110px 0;
-    background-color: #03a1e4;
-    border: none; }
+  padding: 110px 0; }
   .ma-reviews__title {
     color: #03a1e4;
     font-family: "gilroyextrabold", sans-serif;
