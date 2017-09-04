@@ -428,14 +428,15 @@ body {
     background-color: #03a1e4; }
     .ma-header__btn:hover {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      box-shadow: 0px 0px 5px 3px rgba(3, 161, 228, 0.5); }
 
 .navbar {
   border: none;
   background: none; }
 
 .dropdown-menu {
-  min-width: 70px;
+  min-width: 50px;
   padding: 0;
   font-size: 18px;
   background-color: transparent;
@@ -471,7 +472,9 @@ body {
   background-color: transparent; }
 
 .dropdown-menu > li > a {
-  border-bottom: 2px solid transparent; }
+  border-bottom: 2px solid transparent;
+  padding: 3px 0px;
+  text-align: center; }
   .dropdown-menu > li > a:hover {
     border-bottom: 2px solid #03a1e4;
     background-color: transparent; }
@@ -598,3 +601,80 @@ body {
 
 .slick-next:hover:before {
   content: url("../../assets/img/arrow-right-blue.png"); }
+
+@media (max-width: 1066px) {
+  .navbar-nav__item {
+    margin-left: 15px; } }
+
+@media (max-width: 976px) {
+  .navbar-nav__item {
+    margin-left: 5px; } }
+
+@media (max-width: 916px) {
+  .navbar-header {
+    float: none; }
+  .navbar-left, .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0; }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    width: 31%;
+    margin: 0 auto; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important; } }
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    border-top: none;
+    box-shadow: none; }
+  .ma-header {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100px; }
+  .sideways.tabs-left > li {
+    transform: none;
+    text-align: center;
+    margin: 0 auto 10px; }
+  .ma-tabs__preview {
+    height: 135px;
+    width: 100px;
+    transform: none;
+    margin: 0 auto; }
+  .ma-tabs__link--last {
+    margin-left: 0; } }
+
+@media (max-width: 467px) {
+  .navbar-toggle {
+    float: none;
+    margin: 20px auto 0; } }
+
+@media (max-width: 550px) {
+  .ma-header__title {
+    margin-top: 100px;
+    font-size: 40px;
+    line-height: 40px; }
+  .ma-header__description {
+    font-size: 20px;
+    line-height: 26px; } }
+
+@media (max-width: 991px) {
+  .ma-header__btn {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .ma-slide {
+    width: 555px;
+    height: 308px;
+    margin-top: 30px; } }
