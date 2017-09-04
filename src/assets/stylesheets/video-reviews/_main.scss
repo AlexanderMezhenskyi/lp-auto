@@ -1,0 +1,47 @@
+.ma-reviews {
+  background: #fdfdfd url("../img/video-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+  &__title {
+    color: #03a1e4;
+    font-family: $primaryFont;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.ma-slider {
+  height: 308px;
+}
+
+.ma-slide {
+  width: 262px;
+  height: 145px;
+  margin: 30px;
+  margin-top: 100px;
+}
+
+.slick-center.ma-slide {
+  width: 555px;
+  height: 308px;
+  margin-top: 30px;
+}
+
+.slick-prev:before {
+  content: url("../../assets/img/arrow-left-black.png");
+}
+
+.slick-prev:hover:before {
+  content: url("../../assets/img/arrow-left-blue.png");
+}
+
+.slick-next:before {
+  content: url("../../assets/img/arrow-right-black.png");
+}
+
+.slick-next:hover:before {
+  content: url("../../assets/img/arrow-right-blue.png");
+}

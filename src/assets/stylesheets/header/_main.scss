@@ -1,0 +1,96 @@
+.ma-header {
+  padding: 1px 50px 280px;
+  background: #e2e2e2 url("../img/header-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 2px solid #03a1e4;
+  &__title {
+    font-family: $primaryFont;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 173px;
+    margin-bottom: 0;
+    line-height: 69px;
+  }
+  &__description {
+    font-family: "gilroylight", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 36px;
+  }
+  &__btn {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(3, 161, 228, 0.2);
+    border-radius: 20px;
+    background-color: #03a1e4;
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0px 0px 5px 3px rgba(3, 161, 228, 0.5);
+    }
+  }
+}
+
+.navbar {
+  border: none;
+  background: none;
+}
+
+.dropdown-menu {
+  min-width: 50px;
+  padding: 0;
+  font-size: 18px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #444444;
+  font-family: $secondaryFont;
+  font-size: 18px;
+}
+
+.navbar-nav {
+  padding-top: 21px;
+  &__item {
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+  &__link {
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #03a1e4 !important;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  color: #444444;
+  background-color: transparent;
+}
+
+.dropdown-menu > li > a {
+  border-bottom: 2px solid transparent;
+  padding: 3px 0px;
+  text-align: center;
+  &:hover {
+    border-bottom: 2px solid #03a1e4;
+    background-color: transparent;
+  }
+}
